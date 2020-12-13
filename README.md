@@ -4,7 +4,7 @@ Built upon https://github.com/data61/MP-SPDZ
 ## Generate Docker Image
 `docker build -t mp-fsm-eval .`
 
-Can take up to 30m and multiple GB of RAM (6GB+). 
+Can take up to 20m and 10GB+ of RAM.
 
 On windows wsl2 seems to not free RAM when using `RUN make -j 8` command.
 To free said memory close Docker and run `wsl shutdown`.
