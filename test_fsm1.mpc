@@ -1,0 +1,164 @@
+"""
+Test1 for oblivious FSM evaluation
+N_STATES = N_SYMBOLS = 16
+N_INPUT = 10
+string1 = [1 for i in range(10)]
+string2 = [0,1,2,3,4,0,1,2,3,5]
+"""
+# Primitives
+# Pseudorandom Secret Sharing (PSS):	sint.get_random_int
+# Pseudorandom Bit Sharing (PBS): 	_secret.get_random_bit
+# Bit Decomposition (BD): 		sint.bit_decompose
+
+# imports
+import math
+
+# Parameter Constraints
+N_STATES, N_SYMBOLS, N_INPUT = 16, 16, 10
+assert (0 < N_STATES < 33)
+assert (0 < N_SYMBOLS < N_STATES + 1)
+assert (-1 < N_INPUT)
+
+SYMBOL_BITS = math.ceil(math.log(N_SYMBOLS, 2))
+
+# Get Player Inputs
+N_PARTIES = get_number_of_players()
+string1 = Array(N_INPUT, sgf2n)
+string2 = Array(N_INPUT, sgf2n)
+
+print_ln("Configuration: N_STATES=%s, N_SYMBOLS=%s, N_INPUT=%s, N_PARTIES=%s, bit_length=%s,symbol_bits=%s",
+N_STATES, N_SYMBOLS, N_INPUT, N_PARTIES, program.bit_length, SYMBOL_BITS)
+
+@for_range(N_INPUT)
+def _(j):
+	string1[j] = 1 % N_SYMBOLS
+
+string2[0] = sgf2n(0)
+string2[1] = sgf2n(1)
+string2[2] = sgf2n(2)
+string2[3] = sgf2n(3)
+string2[4] = sgf2n(4)
+string2[5] = sgf2n(0)
+string2[6] = sgf2n(1)
+string2[7] = sgf2n(2)
+string2[8] = sgf2n(3)
+string2[9] = sgf2n(5)
+
+# Initialize FSM
+def construct_transition_matrix():
+	"""
+	Construct and returns a new (shared) transition matrix,
+	the states symbolize numbers from 0 to (N_STATES-1) and the transition function
+	is f(sym, state) = (sym+state mod N_STATES). This produces a final complete (dense)
+	matrix where for each state there are N_SYMBOLS transitions 
+	"""
+	transition_matrix = Matrix(N_STATES, N_SYMBOLS, sgf2n)
+
+	@for_range(N_STATES)
+	def _(i):
+		@for_range(N_SYMBOLS)
+		def _(j):
+			transition_matrix[i][j] = 1 << ((i+j) % N_STATES)
+
+	return transition_matrix
+T = construct_transition_matrix()
+
+def construct_final_state_set():
+	"""
+	Returns an array indicating whenever a state is final.
+	A state is final if p(state)=(state%2 == 0) holds.
+	"""
+	is_final_state = Array(N_STATES, sgf2n)
+	
+	@for_range(N_STATES)
+	def _(i):
+		is_final_state[i] = sgf2n((i+1)%2)
+	
+	return is_final_state
+F = construct_final_state_set()
+
+
+# Alphabet encoding and decoding (support for not binary alphabets)
+def indexing_fun(symbol):
+	return symbol
+
+def decoding_fun(symbol):
+	"""
+	Returns a sequence of N_SYMBOLS bits representing the symbol (000010 represent 4).
+	The sequence remains oblivious.
+	"""
+	symbol_bit_decomposition = Array.create_from(symbol.bit_decompose(SYMBOL_BITS))
+	
+	decoding = Array(N_SYMBOLS, sgf2n)
+	decoding.assign_all(1)
+
+	@for_range(N_SYMBOLS)
+	def _(i):
+		i_bit_decomposition =  Array.create_from(i.bit_decompose(SYMBOL_BITS))
+		@for_range(SYMBOL_BITS)
+		def _(j):
+			decoding[i] *= i_bit_decomposition[j].if_else(
+							symbol_bit_decomposition[j], 1 - symbol_bit_decomposition[j])
+	
+	return decoding
+
+def print_array(A, string, decoding_array_fun):
+	print_ln(string)
+
+	@for_range(len(A))
+	def _(i):
+		print_ln("A[%s]=%s", i, decoding_array_fun(A[i]))
+print_array(decoding_fun(sgf2n(2)), "Decoding of 2:", lambda x: cint(x.reveal()))
+print_array(decoding_fun(sgf2n(13)), "Decoding of 13:", lambda x: cint(x.reveal()))
+
+
+# FMS evaluation and transition functions
+def fsm_transition(state, symbol):
+	"""
+	Obliviously computes the next state of the FSM given its current state, symbol and
+	the transition matrix (passed as the global variable "T")
+	"""
+	state_bit_decomposition = Array.create_from(state.bit_decompose(N_STATES))
+	symbol_decoding = decoding_fun(symbol)
+
+	new_state = MemValue(sgf2n(0))
+	@for_range(N_STATES)
+	def _(i):
+		temp = MemValue(sgf2n(0))
+		@for_range(N_SYMBOLS)
+		def _(j):
+			temp.write(temp + T[i][j]*symbol_decoding[j])
+		new_state.write(new_state + temp*state_bit_decomposition[i])
+	
+	print_ln("State Update: OldState[%s], Symbol[%s] -> NewState[%s]",
+			 cint(state.reveal()), cint(symbol.reveal()), cint(new_state.reveal()))
+	return new_state.read()
+			
+def fsm_evaluation(string):
+	"""
+	Evaluates the acceptance of a string on the given FSM.
+	The FSM is defined by global variables T and F. Initial state is forced to 0 while
+	alphabet and states set are defined by the parameter N_STATES and N_SYMBOLS.
+	"""
+	state = MemValue(sgf2n(1))
+
+	@for_range(N_INPUT)
+	def _(i):
+		state.write(fsm_transition(state, string[i]))
+	
+	is_accepted = MemValue(sgf2n(0))
+	@for_range(N_STATES)
+	def _(i):
+		state_bit_decomposition = Array.create_from(state.bit_decompose(N_STATES))
+		is_accepted.write(is_accepted + state_bit_decomposition[i]*F[i])
+
+	return is_accepted.read()
+	
+print_ln("Eval of string 1:")
+print_array(string1, "Input:", lambda x: cint(x.reveal()))
+print_ln("Result: %s", fsm_evaluation(string1).reveal())
+
+print_ln("Eval of string 2:")
+print_array(string2, "Input:", lambda x: cint(x.reveal()))
+print_ln("Result: %s", fsm_evaluation(string2).reveal())
+

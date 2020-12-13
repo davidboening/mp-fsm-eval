@@ -1,0 +1,154 @@
+"""
+Evaluates a public FSM from various private string fragments from different users obliviously.
+Prints steps of computation (DO NOT USE IN PRODUCTION) since this will reveal private data. 
+
+Compilation: (From main folder)
+./compile.py -R 64 fsm_eval_debug N_STATES N_SYMBOLS N_INPUT
+
+Params:
+N_STATES	: integer (1<=x<=32)
+N_SYMBOLS	: integer (1<=x<=32 && x<N_STATES)
+N_INPUT		: integer (any non negative)
+"""
+# Primitives
+# Pseudorandom Secret Sharing (PSS):	sint.get_random_int
+# Pseudorandom Bit Sharing (PBS): 	_secret.get_random_bit
+# Bit Decomposition (BD): 		sint.bit_decompose
+
+# imports
+import math
+
+# Parameter Constraints
+N_STATES, N_SYMBOLS = int(program.args[1]), int(program.args[2])
+assert (0 < N_STATES < 33)
+assert (0 < N_SYMBOLS < N_STATES + 1)
+
+SYMBOL_BITS = math.ceil(math.log(N_SYMBOLS, 2))
+
+
+# Get Player Inputs
+N_PARTIES = len(program.args[3:])
+@if_(N_PARTIES != get_number_of_players())
+def _():
+	runtime_error("Invalid arguments passed:\n Expected (%s) Players, got (%s)",
+	 		N_PARTIES, get_number_of_players())
+assert all(int(x)>=0 for x in program.args[3:])
+N_INPUT = sum(int(x) for x in program.args[3:])
+
+input_string = Array(N_INPUT, sgf2n)
+
+# Compile time loop (there is currently no way to implement this at runtime)
+offset = 0
+for i,party_input_size in enumerate(program.args[3:]):
+	for j in range(int(party_input_size)):
+		input_string[offset+j] = sgf2n.get_raw_input_from(i)
+	offset += int(party_input_size)
+
+
+# Initialize FSM
+def construct_transition_matrix():
+	"""
+	Construct and returns a new (shared) transition matrix,
+	the states symbolize numbers from 0 to (N_STATES-1) and the transition function
+	is f(sym, state) = (sym+state mod N_STATES). This produces a final complete (dense)
+	matrix where for each state there are N_SYMBOLS transitions 
+	"""
+	transition_matrix = Matrix(N_STATES, N_SYMBOLS, sgf2n)
+
+	@for_range(N_STATES)
+	def _(i):
+		@for_range(N_SYMBOLS)
+		def _(j):
+			transition_matrix[i][j] = 1 << ((i+j) % N_STATES)
+
+	return transition_matrix
+T = construct_transition_matrix()
+
+def construct_final_state_set():
+	"""
+	Returns an array indicating whenever a state is final.
+	A state is final if p(state)=(state%2 == 0) holds.
+	"""
+	is_final_state = Array(N_STATES, sgf2n)
+	
+	@for_range(N_STATES)
+	def _(i):
+		is_final_state[i] = sgf2n((i+1)%2)
+	
+	return is_final_state
+F = construct_final_state_set()
+
+
+# Alphabet encoding and decoding (support for not binary alphabets)
+def indexing_fun(symbol):
+	return symbol
+
+def decoding_fun(symbol):
+	"""
+	Returns a sequence of N_SYMBOLS bits representing the symbol (000010 represent 4).
+	The sequence remains oblivious.
+	"""
+	symbol_bit_decomposition = Array.create_from(symbol.bit_decompose(SYMBOL_BITS))
+	
+	decoding = Array(N_SYMBOLS, sgf2n)
+	decoding.assign_all(1)
+
+	@for_range(N_SYMBOLS)
+	def _(i):
+		i_bit_decomposition =  Array.create_from(i.bit_decompose(SYMBOL_BITS))
+		@for_range(SYMBOL_BITS)
+		def _(j):
+			decoding[i] *= i_bit_decomposition[j].if_else(
+							symbol_bit_decomposition[j], 1 - symbol_bit_decomposition[j])
+	
+	return decoding
+
+
+# FMS evaluation and transition functions
+def fsm_transition(state, symbol):
+	"""
+	Obliviously computes the next state of the FSM given its current state, symbol and
+	the transition matrix (passed as the global variable "T")
+	"""
+	state_bit_decomposition = Array.create_from(state.bit_decompose(N_STATES))
+	symbol_decoding = decoding_fun(symbol)
+
+	new_state = MemValue(sgf2n(0))
+	@for_range(N_STATES)
+	def _(i):
+		temp = MemValue(sgf2n(0))
+		@for_range(N_SYMBOLS)
+		def _(j):
+			temp.write(temp + T[i][j]*symbol_decoding[j])
+		new_state.write(new_state + temp*state_bit_decomposition[i])
+	
+	return new_state.read()
+			
+def fsm_evaluation(string):
+	"""
+	Evaluates the acceptance of a string on the given FSM.
+	The FSM is defined by global variables T and F. Initial state is forced to 0 while
+	alphabet and states set are defined by the parameter N_STATES and N_SYMBOLS.
+	"""
+	state = MemValue(sgf2n(1))
+
+	@for_range(N_INPUT)
+	def _(i):
+		state.write(fsm_transition(state, string[i]))
+	
+	is_accepted = MemValue(sgf2n(0))
+	@for_range(N_STATES)
+	def _(i):
+		state_bit_decomposition = Array.create_from(state.bit_decompose(N_STATES))
+		is_accepted.write(is_accepted + state_bit_decomposition[i]*F[i])
+
+	return is_accepted.read()
+
+acceptance = fsm_evaluation(input_string)
+
+@if_e(acceptance.reveal())
+def _():
+	print_ln("String has been accepted")
+@else_
+def _():
+	print_ln("String has been refused")
