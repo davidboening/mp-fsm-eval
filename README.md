@@ -1,5 +1,5 @@
 # Multiparty computation of a Finite State Machine
-Built upon https://github.com/data61/MP-SPDZ
+Built upon https://github.com/data61/MP-SPDZ following https://www.researchgate.net/publication/332877290_Multiparty_Evaluation_of_Finite_State_Machine
 
 ## Generate Docker Image
 `docker build -t mp-fsm-eval .`
