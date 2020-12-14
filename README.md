@@ -1,7 +1,8 @@
 # Multiparty computation of a Finite State Machine
 Built upon https://github.com/data61/MP-SPDZ following https://www.researchgate.net/publication/332877290_Multiparty_Evaluation_of_Finite_State_Machine
 
-## Generate Docker Image
+## Docker
+### Generate Docker Image
 `docker build -t mp-fsm-eval .`
 
 Uses a lot of resources (15m+ of computation and 15GB+ of RAM) on wsl2 (not tested on linux).
@@ -9,12 +10,13 @@ Uses a lot of resources (15m+ of computation and 15GB+ of RAM) on wsl2 (not test
 On windows wsl2 seems to not free RAM when using `RUN make -j 8` command.
 To free said memory close Docker and run `wsl --shutdown`.
 
-## Container Instructions
+### Container Instructions
 `docker run -it --name mp-fsm-eval mp-fsm-eval`
 
 Runs the container in PseudoTerminal mode, needed since ENTRYPOINT is `bash`.
 
-## Preprocess Private Data
+## Multiparty FSM evaluation
+### Preprocess Private Data
 Private data has to be encoded as an element of GF(2^n) with appropiate n (default is 128).
 To obtain said data first encode it as a hexadecimal string ("7fa01") then process it with `./gen_input_f2n.x`
 and save the result in the appropriate file `Player-Data/Private-Input-{PLAYER_ID}`.
@@ -24,7 +26,7 @@ Example Pipeline:
 
 Note that the first input (5) is the number of hexadecimal strings to convert.
 
-## To Run the FSM evaluation 
+### To Run the FSM evaluation 
 To run the FSM evaluation first compile `fsm_eval` following the template>
 
 `./compile.py -M fsm_eval N_STATES N_SYMBOLS INPUT_SIZE_P0 INPUT_SIZE_P1 [INPUT_SIZE_P2 ...]`
@@ -35,7 +37,7 @@ Then connect the various players running each following:
 
 Base port number is required when hostname is not the default option (localhost).
 
-## Tests
+### Tests
 A test case printing various details of computation is available as `test_fsm1` to execute it run:
 
 `./compile.py -M test_fsm1`
