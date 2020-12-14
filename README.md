@@ -4,10 +4,10 @@ Built upon https://github.com/data61/MP-SPDZ
 ## Generate Docker Image
 `docker build -t mp-fsm-eval .`
 
-Can take up to 20m and 10GB+ of RAM.
+Uses a lot of resources (15m+ of computation and 15GB+ of RAM) on wsl2 (not tested on linux).
 
 On windows wsl2 seems to not free RAM when using `RUN make -j 8` command.
-To free said memory close Docker and run `wsl shutdown`.
+To free said memory close Docker and run `wsl --shutdown`.
 
 ## Container Instructions
 `docker run -it --name mp-fsm-eval mp-fsm-eval`
@@ -25,7 +25,7 @@ Example Pipeline:
 Will generate 1,1,1,1,2 the first parameter is the number of hexadecimals to encode.
 
 ## To Run the FSM evaluation 
-To run the FSM evaluation first compile `fsm_eval_debug` following the template>
+To run the FSM evaluation first compile `fsm_eval` following the template>
 
 `./compile.py -M fsm_eval N_STATES N_SYMBOLS [INPUT_SIZE_1 INPUT_SIZE_2 ...]`
 
