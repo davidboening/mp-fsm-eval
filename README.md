@@ -18,11 +18,11 @@ Runs the container in PseudoTerminal mode, needed since ENTRYPOINT is `bash`.
 ## Multiparty FSM evaluation
 ### Preprocess Private Data
 Private data has to be encoded as an element of GF(2^n) with appropiate n (default is 128).
-To obtain said data first encode it as a hexadecimal string ("7fa01") then process it with `./gen_input_f2n.x`
+To obtain said data first encode it as a hexadecimal string ("7fa01") then process it with `./gen_input_gf2n.x`
 and save the result in the appropriate file `Player-Data/Private-Input-{PLAYER_ID}`.
 
 Example Pipeline:
-- `echo 5 ff a1c 1 1 2d1c0 > gf2n_vals.in && ./gen_input_f2n.x && mv gf2n_vals.out Player-Data/Private-Input-0`
+- `echo 5 ff a1c 1 1 2d1c0 > gf2n_vals.in && ./gen_input_gf2n.x && mv gf2n_vals.out Player-Data/Private-Input-0`
 
 Note that the first input (5) is the number of hexadecimal strings to convert.
 
