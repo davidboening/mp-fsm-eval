@@ -3,11 +3,11 @@ Evaluates a public FSM from various private string fragments from different user
 Prints steps of computation (DO NOT USE IN PRODUCTION) since this will reveal private data. 
 
 Compilation: (From main folder)
-./compile.py -R 64 fsm_eval_debug N_STATES N_SYMBOLS N_INPUT
+./compile.py -M fsm_eval_debug N_STATES N_SYMBOLS N_INPUT
 
 Params:
-N_STATES	: integer (1<=x<=32)
-N_SYMBOLS	: integer (1<=x<=32 && x<N_STATES)
+N_STATES	: integer (1<=x<=64)
+N_SYMBOLS	: integer (1<=x<=N_STATES)
 N_INPUT		: integer (any non negative)
 """
 # Primitives
@@ -20,7 +20,7 @@ import math
 
 # Parameter Constraints
 N_STATES, N_SYMBOLS = int(program.args[1]), int(program.args[2])
-assert (0 < N_STATES < 33)
+assert (0 < N_STATES < 65)
 assert (0 < N_SYMBOLS < N_STATES + 1)
 
 SYMBOL_BITS = math.ceil(math.log(N_SYMBOLS, 2))
@@ -59,10 +59,9 @@ def construct_transition_matrix():
 	"""
 	transition_matrix = Matrix(N_STATES, N_SYMBOLS, sgf2n)
 
-	@for_range(N_STATES)
-	def _(i):
-		@for_range(N_SYMBOLS)
-		def _(j):
+	# Changed loops to compile time (enables N_STATES up to 64)
+	for i in range(N_STATES):
+		for j in range(N_SYMBOLS):
 			transition_matrix[i][j] = 1 << ((i+j) % N_STATES)
 
 	return transition_matrix
@@ -75,8 +74,7 @@ def construct_final_state_set():
 	"""
 	is_final_state = Array(N_STATES, sgf2n)
 	
-	@for_range(N_STATES)
-	def _(i):
+	for i in range(N_STATES):
 		is_final_state[i] = sgf2n((i+1)%2)
 	
 	return is_final_state
