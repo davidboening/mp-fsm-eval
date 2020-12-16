@@ -19,5 +19,4 @@ COPY ./*.mpc /opt/source/mp-spdz/Programs/Source/
 # Initialize files
 RUN mkdir Player-Data
 
-# TODO: generate a script for ease of use
 ENTRYPOINT bash
