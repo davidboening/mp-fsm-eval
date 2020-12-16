@@ -1,0 +1,7 @@
+,TestName,Repetition,# Players,# States,# Symbols,String Length,Virtual Machine,Time(s),Player-0 Data Sent(MB),Player-0 Data Sent(MB),Result,Sum of Inputs
+0,Test semi2k,0,3,8,8,15,./semi2k-party.x,0.321248,16.6005,16.6005,False,61
+1,Test semi2k,1,3,8,8,15,./semi2k-party.x,0.320494,16.6005,16.6005,False,61
+2,Test semi2k,2,3,8,8,15,./semi2k-party.x,0.328809,16.6005,16.6005,False,61
+3,Test spdz2k,0,3,8,8,15,./spdz2k-party.x,1.36443,131.71,131.71,False,53
+4,Test spdz2k,1,3,8,8,15,./spdz2k-party.x,1.37157,131.71,131.71,False,53
+5,Test spdz2k,2,3,8,8,15,./spdz2k-party.x,1.32906,131.71,131.71,False,53

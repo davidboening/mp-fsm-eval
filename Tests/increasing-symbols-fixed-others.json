@@ -1,0 +1,90 @@
+[
+    {
+        "NAME": "Test z=8",
+        "N_STATES": 64,
+        "N_SYMBOLS": 8,
+        "PLAYER_INPUT_SIZES": [
+            5,
+            5,
+            5
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Test z=12",
+        "N_STATES": 64,
+        "N_SYMBOLS": 12,
+        "PLAYER_INPUT_SIZES": [
+            5,
+            5,
+            5
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Test n=16",
+        "N_STATES": 64,
+        "N_SYMBOLS": 16,
+        "PLAYER_INPUT_SIZES": [
+            5,
+            5,
+            5
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Test n=20",
+        "N_STATES": 64,
+        "N_SYMBOLS": 20,
+        "PLAYER_INPUT_SIZES": [
+            5,
+            5,
+            5
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Test n=24",
+        "N_STATES": 64,
+        "N_SYMBOLS": 24,
+        "PLAYER_INPUT_SIZES": [
+            5,
+            5,
+            5
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Test n=32",
+        "N_STATES": 64,
+        "N_SYMBOLS": 32,
+        "PLAYER_INPUT_SIZES": [
+            5,
+            5,
+            5
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Test n=48",
+        "N_STATES": 64,
+        "N_SYMBOLS": 48,
+        "PLAYER_INPUT_SIZES": [
+            5,
+            5,
+            5
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Test n=64",
+        "N_STATES": 64,
+        "N_SYMBOLS": 64,
+        "PLAYER_INPUT_SIZES": [
+            5,
+            5,
+            5
+        ],
+        "REPETITIONS": 3
+    }
+]

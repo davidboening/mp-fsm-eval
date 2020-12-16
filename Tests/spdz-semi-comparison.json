@@ -1,0 +1,25 @@
+[
+    {
+        "NAME": "Test semi2k",
+        "N_STATES": 8,
+        "N_SYMBOLS": 8,
+        "PLAYER_INPUT_SIZES": [
+            5,
+            5,
+            5
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Test spdz2k",
+        "N_STATES": 8,
+        "N_SYMBOLS": 8,
+        "PLAYER_INPUT_SIZES": [
+            5,
+            5,
+            5
+        ],
+        "REPETITIONS": 3,
+        "VIRTUAL_MACHINE": "./spdz2k-party.x"
+    }
+]

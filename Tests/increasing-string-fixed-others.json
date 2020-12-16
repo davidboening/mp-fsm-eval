@@ -1,0 +1,79 @@
+[
+    {
+        "NAME": "Test s=5*3",
+        "N_STATES": 8,
+        "N_SYMBOLS": 8,
+        "PLAYER_INPUT_SIZES": [
+            5,
+            5,
+            5
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Test s=10*3",
+        "N_STATES": 8,
+        "N_SYMBOLS": 8,
+        "PLAYER_INPUT_SIZES": [
+            10,
+            10,
+            10
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Test n=15*3",
+        "N_STATES": 8,
+        "N_SYMBOLS": 8,
+        "PLAYER_INPUT_SIZES": [
+            15,
+            15,
+            15
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Test n=20*3",
+        "N_STATES": 8,
+        "N_SYMBOLS": 8,
+        "PLAYER_INPUT_SIZES": [
+            20,
+            20,
+            20
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Test n=30*3",
+        "N_STATES": 8,
+        "N_SYMBOLS": 8,
+        "PLAYER_INPUT_SIZES": [
+            30,
+            30,
+            30
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Test n=40*3",
+        "N_STATES": 8,
+        "N_SYMBOLS": 8,
+        "PLAYER_INPUT_SIZES": [
+            40,
+            40,
+            40
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Test n=50*3",
+        "N_STATES": 8,
+        "N_SYMBOLS": 8,
+        "PLAYER_INPUT_SIZES": [
+            50,
+            50,
+            50
+        ],
+        "REPETITIONS": 3
+    }
+]

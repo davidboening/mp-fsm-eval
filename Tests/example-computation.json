@@ -1,0 +1,40 @@
+[
+    {
+        "DEBUG": true,
+        "NAME": "Test Debug",
+        "N_STATES": 16,
+        "N_SYMBOLS": 16,
+        "PLAYER_INPUT_SIZES": [
+            4,
+            6,
+            3,
+            2
+        ],
+        "REPETITIONS": 3,
+        "PLAYER_DATA": [
+            [
+                0,
+                1,
+                1,
+                2
+            ],
+            [
+                5,
+                5,
+                1,
+                1,
+                1,
+                1
+            ],
+            [
+                10,
+                15,
+                4
+            ],
+            [
+                0,
+                0
+            ]
+        ]
+    }
+]

@@ -1,0 +1,51 @@
+Starting Test semi2k
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=3
+STRING_LENGTH=15
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=61
+Repetition 1
+Trying to run 64-bit computation
+String has been refused
+Time = 0.321248 seconds 
+Data sent = 16.6005 MB
+Global data sent = 49.7077 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been refused
+Time = 0.320494 seconds 
+Data sent = 16.6005 MB
+Global data sent = 49.7077 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been refused
+Time = 0.328809 seconds 
+Data sent = 16.6005 MB
+Global data sent = 49.7077 MB
+Finished Test semi2k
+Starting Test spdz2k
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=3
+STRING_LENGTH=15
+VIRTUAL_MACHINE=./spdz2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=53
+Repetition 1
+String has been refused
+Time = 1.36443 seconds 
+Data sent = 131.71 MB
+Global data sent = 394.972 MB
+Repetition 2
+String has been refused
+Time = 1.37157 seconds 
+Data sent = 131.71 MB
+Global data sent = 394.972 MB
+Repetition 3
+String has been refused
+Time = 1.32906 seconds 
+Data sent = 131.71 MB
+Global data sent = 394.972 MB
+Finished Test spdz2k
