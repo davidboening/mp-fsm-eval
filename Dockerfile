@@ -10,8 +10,8 @@ RUN apt update && apt install -y \
 # Download and install main library
 RUN git clone https://github.com/data61/MP-SPDZ.git /opt/source/mp-spdz
 WORKDIR /opt/source/mp-spdz/
-RUN make -j 8 tldr
-RUN make -j 8 gen_input spdz2k
+RUN make -j 2 tldr
+RUN make -j 2 gen_input_f2n.x semi2k-party.x spdz2k-party.x replicated-ring-party.x galois-degree.x
 
 # Copy source code
 COPY ./*.mpc /opt/source/mp-spdz/Programs/Source/
