@@ -1,0 +1,22 @@
+,TestName,Repetition,# Players,# States,# Symbols,String Length,Virtual Machine,Time(s),Player-0 Data Sent(MB),Global Data Sent(MB),Result,Sum of Inputs
+0,Test s=5*3,0,3,8,8,15,./semi2k-party.x,0.349565,16.6005,49.7077,False,75
+1,Test s=5*3,1,3,8,8,15,./semi2k-party.x,0.336686,16.6005,49.7077,False,75
+2,Test s=5*3,2,3,8,8,15,./semi2k-party.x,0.352114,16.6005,49.7077,False,75
+3,Test s=10*3,0,3,8,8,30,./semi2k-party.x,0.651698,24.894,74.495,False,91
+4,Test s=10*3,1,3,8,8,30,./semi2k-party.x,0.723866,24.894,74.495,False,91
+5,Test s=10*3,2,3,8,8,30,./semi2k-party.x,0.635562,24.894,74.495,False,91
+6,Test n=15*3,0,3,8,8,45,./semi2k-party.x,0.941189,41.3877,123.883,True,140
+7,Test n=15*3,1,3,8,8,45,./semi2k-party.x,0.996474,41.3877,123.883,True,140
+8,Test n=15*3,2,3,8,8,45,./semi2k-party.x,0.96313,41.3877,123.883,True,140
+9,Test n=20*3,0,3,8,8,60,./semi2k-party.x,1.45135,49.6811,148.67,False,187
+10,Test n=20*3,1,3,8,8,60,./semi2k-party.x,1.2098,49.6811,148.67,False,187
+11,Test n=20*3,2,3,8,8,60,./semi2k-party.x,1.2269,49.6811,148.67,False,187
+12,Test n=30*3,0,3,8,8,90,./semi2k-party.x,1.81529,74.5003,222.941,False,313
+13,Test n=30*3,1,3,8,8,90,./semi2k-party.x,1.79418,74.5003,222.941,False,313
+14,Test n=30*3,2,3,8,8,90,./semi2k-party.x,1.85297,74.5003,222.941,False,313
+15,Test n=40*3,0,3,8,8,120,./semi2k-party.x,2.38745,99.2874,297.116,False,429
+16,Test n=40*3,1,3,8,8,120,./semi2k-party.x,2.37284,99.2874,297.116,False,429
+17,Test n=40*3,2,3,8,8,120,./semi2k-party.x,2.38296,99.2874,297.116,False,429
+18,Test n=50*3,0,3,8,8,150,./semi2k-party.x,2.97903,124.075,371.292,False,535
+19,Test n=50*3,1,3,8,8,150,./semi2k-party.x,2.95639,124.075,371.292,False,535
+20,Test n=50*3,2,3,8,8,150,./semi2k-party.x,2.93633,124.075,371.292,False,535

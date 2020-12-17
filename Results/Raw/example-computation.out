@@ -1,0 +1,120 @@
+Starting Test Debug
+N_STATES=16
+N_SYMBOLS=16
+N_PLAYERS=4
+STRING_LENGTH=15
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=47
+Repetition 1
+Trying to run 64-bit computation
+User[0] sends value (0)
+User[0] sends value (1)
+User[0] sends value (1)
+User[0] sends value (2)
+User[1] sends value (5)
+User[1] sends value (5)
+User[1] sends value (1)
+User[1] sends value (1)
+User[1] sends value (1)
+User[1] sends value (1)
+User[2] sends value (10)
+User[2] sends value (15)
+User[2] sends value (4)
+User[3] sends value (0)
+User[3] sends value (0)
+Configuration: N_STATES=16, N_SYMBOLS=16, N_PARTIES=4, N_INPUT=15, bit_lenght=64, symbol_bits=4
+State Update: OldState[1], Symbol[0] -> NewState[1]
+State Update: OldState[1], Symbol[1] -> NewState[2]
+State Update: OldState[2], Symbol[1] -> NewState[4]
+State Update: OldState[4], Symbol[2] -> NewState[16]
+State Update: OldState[16], Symbol[5] -> NewState[512]
+State Update: OldState[512], Symbol[5] -> NewState[16384]
+State Update: OldState[16384], Symbol[1] -> NewState[32768]
+State Update: OldState[32768], Symbol[1] -> NewState[1]
+State Update: OldState[1], Symbol[1] -> NewState[2]
+State Update: OldState[2], Symbol[1] -> NewState[4]
+State Update: OldState[4], Symbol[10] -> NewState[4096]
+State Update: OldState[4096], Symbol[15] -> NewState[2048]
+State Update: OldState[2048], Symbol[4] -> NewState[32768]
+State Update: OldState[32768], Symbol[0] -> NewState[32768]
+State Update: OldState[32768], Symbol[0] -> NewState[32768]
+String has been refused
+Time = 1.62915 seconds 
+Data sent = 74.4515 MB
+Global data sent = 296.825 MB
+Repetition 2
+Trying to run 64-bit computation
+User[0] sends value (0)
+User[0] sends value (1)
+User[0] sends value (1)
+User[0] sends value (2)
+User[1] sends value (5)
+User[1] sends value (5)
+User[1] sends value (1)
+User[1] sends value (1)
+User[1] sends value (1)
+User[1] sends value (1)
+User[2] sends value (10)
+User[2] sends value (15)
+User[2] sends value (4)
+User[3] sends value (0)
+User[3] sends value (0)
+Configuration: N_STATES=16, N_SYMBOLS=16, N_PARTIES=4, N_INPUT=15, bit_lenght=64, symbol_bits=4
+State Update: OldState[1], Symbol[0] -> NewState[1]
+State Update: OldState[1], Symbol[1] -> NewState[2]
+State Update: OldState[2], Symbol[1] -> NewState[4]
+State Update: OldState[4], Symbol[2] -> NewState[16]
+State Update: OldState[16], Symbol[5] -> NewState[512]
+State Update: OldState[512], Symbol[5] -> NewState[16384]
+State Update: OldState[16384], Symbol[1] -> NewState[32768]
+State Update: OldState[32768], Symbol[1] -> NewState[1]
+State Update: OldState[1], Symbol[1] -> NewState[2]
+State Update: OldState[2], Symbol[1] -> NewState[4]
+State Update: OldState[4], Symbol[10] -> NewState[4096]
+State Update: OldState[4096], Symbol[15] -> NewState[2048]
+State Update: OldState[2048], Symbol[4] -> NewState[32768]
+State Update: OldState[32768], Symbol[0] -> NewState[32768]
+State Update: OldState[32768], Symbol[0] -> NewState[32768]
+String has been refused
+Time = 1.3964 seconds 
+Data sent = 74.4515 MB
+Global data sent = 296.825 MB
+Repetition 3
+Trying to run 64-bit computation
+User[0] sends value (0)
+User[0] sends value (1)
+User[0] sends value (1)
+User[0] sends value (2)
+User[1] sends value (5)
+User[1] sends value (5)
+User[1] sends value (1)
+User[1] sends value (1)
+User[1] sends value (1)
+User[1] sends value (1)
+User[2] sends value (10)
+User[2] sends value (15)
+User[2] sends value (4)
+User[3] sends value (0)
+User[3] sends value (0)
+Configuration: N_STATES=16, N_SYMBOLS=16, N_PARTIES=4, N_INPUT=15, bit_lenght=64, symbol_bits=4
+State Update: OldState[1], Symbol[0] -> NewState[1]
+State Update: OldState[1], Symbol[1] -> NewState[2]
+State Update: OldState[2], Symbol[1] -> NewState[4]
+State Update: OldState[4], Symbol[2] -> NewState[16]
+State Update: OldState[16], Symbol[5] -> NewState[512]
+State Update: OldState[512], Symbol[5] -> NewState[16384]
+State Update: OldState[16384], Symbol[1] -> NewState[32768]
+State Update: OldState[32768], Symbol[1] -> NewState[1]
+State Update: OldState[1], Symbol[1] -> NewState[2]
+State Update: OldState[2], Symbol[1] -> NewState[4]
+State Update: OldState[4], Symbol[10] -> NewState[4096]
+State Update: OldState[4096], Symbol[15] -> NewState[2048]
+State Update: OldState[2048], Symbol[4] -> NewState[32768]
+State Update: OldState[32768], Symbol[0] -> NewState[32768]
+State Update: OldState[32768], Symbol[0] -> NewState[32768]
+String has been refused
+Time = 1.37848 seconds 
+Data sent = 74.4515 MB
+Global data sent = 296.825 MB
+Finished Test Debug

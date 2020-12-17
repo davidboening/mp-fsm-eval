@@ -1,0 +1,189 @@
+Starting Test p=2
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=2
+STRING_LENGTH=32
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=110
+Repetition 1
+Trying to run 64-bit computation
+String has been accepted
+Time = 0.483563 seconds 
+Data sent = 16.5534 MB
+Global data sent = 33.1068 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been accepted
+Time = 0.461086 seconds 
+Data sent = 16.5534 MB
+Global data sent = 33.1068 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been accepted
+Time = 0.450656 seconds 
+Data sent = 16.5534 MB
+Global data sent = 33.1068 MB
+Finished Test p=2
+Starting Test p=3
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=3
+STRING_LENGTH=32
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=114
+Repetition 1
+Trying to run 64-bit computation
+String has been accepted
+Time = 0.735175 seconds 
+Data sent = 33.1067 MB
+Global data sent = 99.1204 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been accepted
+Time = 0.698637 seconds 
+Data sent = 33.1067 MB
+Global data sent = 99.1204 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been accepted
+Time = 0.684383 seconds 
+Data sent = 33.1067 MB
+Global data sent = 99.1204 MB
+Finished Test p=3
+Starting Test p=4
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=4
+STRING_LENGTH=32
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=118
+Repetition 1
+Trying to run 64-bit computation
+String has been accepted
+Time = 1.00117 seconds 
+Data sent = 49.6598 MB
+Global data sent = 198.041 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been accepted
+Time = 1.00709 seconds 
+Data sent = 49.6598 MB
+Global data sent = 198.041 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been accepted
+Time = 0.969162 seconds 
+Data sent = 49.6598 MB
+Global data sent = 198.041 MB
+Finished Test p=4
+Starting Test p=5
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=5
+STRING_LENGTH=32
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=124
+Repetition 1
+Trying to run 64-bit computation
+String has been accepted
+Time = 1.45919 seconds 
+Data sent = 66.2131 MB
+Global data sent = 329.868 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been accepted
+Time = 1.47456 seconds 
+Data sent = 66.2131 MB
+Global data sent = 329.868 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been accepted
+Time = 1.38279 seconds 
+Data sent = 66.2131 MB
+Global data sent = 329.868 MB
+Finished Test p=5
+Starting Test p=6
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=6
+STRING_LENGTH=32
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=115
+Repetition 1
+Trying to run 64-bit computation
+String has been refused
+Time = 1.91663 seconds 
+Data sent = 82.7663 MB
+Global data sent = 494.602 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been refused
+Time = 1.91708 seconds 
+Data sent = 82.7663 MB
+Global data sent = 494.602 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been refused
+Time = 1.88832 seconds 
+Data sent = 82.7663 MB
+Global data sent = 494.602 MB
+Finished Test p=6
+Starting Test p=8
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=8
+STRING_LENGTH=32
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=98
+Repetition 1
+Trying to run 64-bit computation
+String has been accepted
+Time = 3.35105 seconds 
+Data sent = 115.872 MB
+Global data sent = 922.791 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been accepted
+Time = 3.17252 seconds 
+Data sent = 115.872 MB
+Global data sent = 922.791 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been accepted
+Time = 3.17139 seconds 
+Data sent = 115.872 MB
+Global data sent = 922.791 MB
+Finished Test p=8
+Starting Test p=16
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=16
+STRING_LENGTH=32
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=103
+Repetition 1
+Trying to run 64-bit computation
+String has been refused
+Time = 13.5823 seconds 
+Data sent = 247.699 MB
+Global data sent = 3951.82 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been refused
+Time = 11.8225 seconds 
+Data sent = 247.699 MB
+Global data sent = 3951.82 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been refused
+Time = 12.2948 seconds 
+Data sent = 247.699 MB
+Global data sent = 3951.82 MB
+Finished Test p=16
