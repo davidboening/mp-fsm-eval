@@ -56,12 +56,12 @@ Example Usage: `./generate_test_script.py Tests/increasing-party-fixed-others.js
 See [Tests](./Tests) for json examples. For detailed script syntax run with `--help`.
 
 The resulting .sh scripts will:
-0) Generate a new internal network for containers (ONCE ONLY).
-1) Start all needed containers.
-2) Compile fsm_eval with correct parameters.
-3) Generate/Initialize private data for each container.
-4) Run the underlying vistual machine.
-5) Stop all containers (this may take a while).
+1) Generate a new internal network for containers (ONCE ONLY).
+2) Start all needed containers.
+3) Compile fsm_eval with correct parameters.
+4) Generate/Initialize private data for each container.
+5) Run the underlying vistual machine.
+6) Stop all containers (this may take a while).
 
 It is recommended to redirect stdout and stderr to the same file. 
 
