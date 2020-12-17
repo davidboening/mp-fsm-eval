@@ -8,7 +8,7 @@ Built upon https://github.com/data61/MP-SPDZ following https://www.researchgate.
 May take up to an hour (consider increasing -j flag in in Dockerfile if you have sufficent RAM).
 
 On windows wsl2 does seems to not free RAM in some cases https://github.com/microsoft/WSL/issues/4166.
-To free said memory close Docker and run `wsl --shutdown` and consider to limit wsl's RAM usage.
+To free said memory close Docker and run `wsl --shutdown` and consider limiting wsl's RAM usage.
 
 
 ### Container Instructions
