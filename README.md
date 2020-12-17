@@ -5,10 +5,11 @@ Built upon https://github.com/data61/MP-SPDZ following https://www.researchgate.
 ### Generate Docker Image
 `docker build -t mp-fsm-eval .`
 
-Uses a lot of resources (15m+ of computation and 15GB+ of RAM) on wsl2 (not tested on linux).
+May take up to an hour (consider increasing -j flag in in Dockerfile if you have sufficent RAM).
 
-On windows wsl2 seems to not free RAM when using `RUN make -j 8` command.
-To free said memory close Docker and run `wsl --shutdown`.
+On windows wsl2 does seems to not free RAM in some cases https://github.com/microsoft/WSL/issues/4166.
+To free said memory close Docker and run `wsl --shutdown` and consider to limit wsl's RAM usage.
+
 
 ### Container Instructions
 `docker run -it --name mp-fsm-eval mp-fsm-eval`
