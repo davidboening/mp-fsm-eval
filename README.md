@@ -52,7 +52,7 @@ The last script starts 2 `spdz2k-party.x` virtual machines on the same host.
 Added [Test Generation Script](./generate_test_script.py) to generate Testing Suites (.sh scripts) based on a .json scheme.
 No support for PowerShell Scripts is currently planned.
 
-Example Usage: `./generate_test_script.py Tests/increasing-party-fixed-others.json Scripts/increasing-party-fixed-others.sh`
+Example Usage: `./generate_test_script.py Tests/increasing-party-fixed-others.json Scripts/increasing-party-fixed-others.sh --image IMAGE_NAME`
 
 See [Tests](./Tests) for json examples. For detailed script syntax run with `--help`.
 
