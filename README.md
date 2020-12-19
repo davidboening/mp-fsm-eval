@@ -5,10 +5,10 @@ Built upon https://github.com/data61/MP-SPDZ following https://www.researchgate.
 ### Generate Docker Image
 `docker build -t mp-fsm-eval .`
 
-May take up to an hour (consider increasing -j flag in in Dockerfile if you have sufficent RAM).
+May take up to 30m (consider increasing -j flag in in Dockerfile if you have sufficent RAM).
 
 On windows wsl2 does seems to not free RAM in some cases https://github.com/microsoft/WSL/issues/4166.
-To free said memory close Docker and run `wsl --shutdown` and consider limiting wsl's RAM usage.
+To free said memory close Docker and run `wsl --shutdown`. Also consider limiting wsl's RAM usage.
 
 
 ### Container Instructions
@@ -34,12 +34,12 @@ To run the FSM evaluation first compile `fsm_eval` following the template>
 
 Then connect the various players running each following:
 
-`./spdz2k-party.x PLAYER_ID fsm_eval-{N_STATES}-{N_SYMBOLS}-{INPUT_SIZE_P0}-{...} -N N_PLAYERS -h HOSTNAME_OF_PLAYER_0 -pn BASE_PORT_NUMBER`
+`./semi2k-party.x PLAYER_ID fsm_eval-{N_STATES}-{N_SYMBOLS}-{INPUT_SIZE_P0}-{...} -N N_PLAYERS -h HOSTNAME_OF_PLAYER_0 -pn BASE_PORT_NUMBER`
 
 Base port number is required when hostname is not the default option (localhost).
 
-### Tests
-#### Same host (example computation)
+## Tests
+### Same host (example computation)
 A test case printing various details of computation is available as `test_fsm1` to execute it run:
 
 `./compile.py -M test_fsm1`
@@ -48,7 +48,7 @@ A test case printing various details of computation is available as `test_fsm1` 
 
 The last script starts 2 `spdz2k-party.x` virtual machines on the same host.
 
-#### Costumized Tests
+### Costumized Tests
 Added [Test Generation Script](./generate_test_script.py) to generate Testing Suites (.sh scripts) based on a .json scheme.
 No support for PowerShell Scripts is currently planned.
 
