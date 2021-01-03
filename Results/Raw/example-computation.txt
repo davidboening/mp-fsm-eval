@@ -3,6 +3,7 @@ N_STATES=16
 N_SYMBOLS=16
 N_PLAYERS=4
 STRING_LENGTH=15
+DEBUG MODE
 VIRTUAL_MACHINE=./semi2k-party.x
 REPETITIONS=3
 SUM_OF_DATA=47
@@ -40,7 +41,7 @@ State Update: OldState[2048], Symbol[4] -> NewState[32768]
 State Update: OldState[32768], Symbol[0] -> NewState[32768]
 State Update: OldState[32768], Symbol[0] -> NewState[32768]
 String has been refused
-Time = 1.62915 seconds 
+Time = 1.52719 seconds 
 Data sent = 74.4515 MB
 Global data sent = 296.825 MB
 Repetition 2
@@ -77,7 +78,7 @@ State Update: OldState[2048], Symbol[4] -> NewState[32768]
 State Update: OldState[32768], Symbol[0] -> NewState[32768]
 State Update: OldState[32768], Symbol[0] -> NewState[32768]
 String has been refused
-Time = 1.3964 seconds 
+Time = 1.67608 seconds 
 Data sent = 74.4515 MB
 Global data sent = 296.825 MB
 Repetition 3
@@ -114,7 +115,7 @@ State Update: OldState[2048], Symbol[4] -> NewState[32768]
 State Update: OldState[32768], Symbol[0] -> NewState[32768]
 State Update: OldState[32768], Symbol[0] -> NewState[32768]
 String has been refused
-Time = 1.37848 seconds 
+Time = 1.65783 seconds 
 Data sent = 74.4515 MB
 Global data sent = 296.825 MB
 Finished Test Debug

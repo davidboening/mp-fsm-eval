@@ -169,7 +169,7 @@ def write_test_case(test_case, fd):
         f"echo N_SYMBOLS={n_symbols}\n"
         f"echo N_PLAYERS={n_containers}\n"
         f"echo STRING_LENGTH={string_length}\n"
-        + (f"echo DEBUG MODE\n" if debug is True else "")
+        + (f"echo DEBUG MODE\n" if debug == "_debug" else "")
         + f"echo VIRTUAL_MACHINE={virtual_machine}\n"
         f"echo REPETITIONS={repetitions}\n"
     )

@@ -1,0 +1,216 @@
+Starting Variable String Lenght: m=10
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=3
+STRING_LENGTH=10
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=41
+Repetition 1
+Trying to run 64-bit computation
+String has been refused
+Time = 0.214185 seconds 
+Data sent = 8.36926 MB
+Global data sent = 25.0448 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been refused
+Time = 0.202813 seconds 
+Data sent = 8.36926 MB
+Global data sent = 25.0448 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been refused
+Time = 0.212697 seconds 
+Data sent = 8.36926 MB
+Global data sent = 25.0448 MB
+Finished Variable String Lenght: m=10
+Starting Variable String Lenght: m=20
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=3
+STRING_LENGTH=20
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=63
+Repetition 1
+Trying to run 64-bit computation
+String has been refused
+Time = 0.398444 seconds 
+Data sent = 16.6316 MB
+Global data sent = 49.7699 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been refused
+Time = 0.382993 seconds 
+Data sent = 16.6316 MB
+Global data sent = 49.7699 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been refused
+Time = 0.409172 seconds 
+Data sent = 16.6316 MB
+Global data sent = 49.7699 MB
+Finished Variable String Lenght: m=20
+Starting Variable String Lenght: m=30
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=3
+STRING_LENGTH=30
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=82
+Repetition 1
+Trying to run 64-bit computation
+String has been accepted
+Time = 0.567653 seconds 
+Data sent = 24.894 MB
+Global data sent = 74.495 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been accepted
+Time = 0.574812 seconds 
+Data sent = 24.894 MB
+Global data sent = 74.495 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been accepted
+Time = 0.588477 seconds 
+Data sent = 24.894 MB
+Global data sent = 74.495 MB
+Finished Variable String Lenght: m=30
+Starting Variable String Lenght: m=40
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=3
+STRING_LENGTH=40
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=157
+Repetition 1
+Trying to run 64-bit computation
+String has been refused
+Time = 0.778896 seconds 
+Data sent = 33.1564 MB
+Global data sent = 99.22 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been refused
+Time = 0.746568 seconds 
+Data sent = 33.1564 MB
+Global data sent = 99.22 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been refused
+Time = 0.751395 seconds 
+Data sent = 33.1564 MB
+Global data sent = 99.22 MB
+Finished Variable String Lenght: m=40
+Starting Variable String Lenght: m=50
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=3
+STRING_LENGTH=50
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=184
+Repetition 1
+Trying to run 64-bit computation
+String has been accepted
+Time = 0.960362 seconds 
+Data sent = 41.4188 MB
+Global data sent = 123.945 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been accepted
+Time = 0.929432 seconds 
+Data sent = 41.4188 MB
+Global data sent = 123.945 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been accepted
+Time = 0.893577 seconds 
+Data sent = 41.4188 MB
+Global data sent = 123.945 MB
+Finished Variable String Lenght: m=50
+Starting Variable String Lenght: m=60
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=3
+STRING_LENGTH=60
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=189
+Repetition 1
+Trying to run 64-bit computation
+String has been refused
+Time = 1.0821 seconds 
+Data sent = 49.6811 MB
+Global data sent = 148.67 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been refused
+Time = 1.13398 seconds 
+Data sent = 49.6811 MB
+Global data sent = 148.67 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been refused
+Time = 1.10121 seconds 
+Data sent = 49.6811 MB
+Global data sent = 148.67 MB
+Finished Variable String Lenght: m=60
+Starting Variable String Lenght: m=70
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=3
+STRING_LENGTH=70
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=228
+Repetition 1
+Trying to run 64-bit computation
+String has been accepted
+Time = 1.27657 seconds 
+Data sent = 57.9435 MB
+Global data sent = 173.395 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been accepted
+Time = 1.24182 seconds 
+Data sent = 57.9435 MB
+Global data sent = 173.395 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been accepted
+Time = 1.25876 seconds 
+Data sent = 57.9435 MB
+Global data sent = 173.395 MB
+Finished Variable String Lenght: m=70
+Starting Variable String Lenght: m=80
+N_STATES=8
+N_SYMBOLS=8
+N_PLAYERS=3
+STRING_LENGTH=80
+VIRTUAL_MACHINE=./semi2k-party.x
+REPETITIONS=3
+SUM_OF_DATA=265
+Repetition 1
+Trying to run 64-bit computation
+String has been refused
+Time = 1.48296 seconds 
+Data sent = 66.2059 MB
+Global data sent = 198.12 MB
+Repetition 2
+Trying to run 64-bit computation
+String has been refused
+Time = 1.41726 seconds 
+Data sent = 66.2059 MB
+Global data sent = 198.12 MB
+Repetition 3
+Trying to run 64-bit computation
+String has been refused
+Time = 1.49721 seconds 
+Data sent = 66.2059 MB
+Global data sent = 198.12 MB
+Finished Variable String Lenght: m=80

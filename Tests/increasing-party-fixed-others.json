@@ -1,6 +1,6 @@
 [
     {
-        "NAME": "Test p=2",
+        "NAME": "Variable #Parties: p=2",
         "N_STATES": 8,
         "N_SYMBOLS": 8,
         "PLAYER_INPUT_SIZES": [
@@ -10,18 +10,18 @@
         "REPETITIONS": 3
     },
     {
-        "NAME": "Test p=3",
+        "NAME": "Variable #Parties: p=3",
         "N_STATES": 8,
         "N_SYMBOLS": 8,
         "PLAYER_INPUT_SIZES": [
-            12,
-            10,
+            11,
+            11,
             10
         ],
         "REPETITIONS": 3
     },
     {
-        "NAME": "Test p=4",
+        "NAME": "Variable #Parties: p=4",
         "N_STATES": 8,
         "N_SYMBOLS": 8,
         "PLAYER_INPUT_SIZES": [
@@ -33,12 +33,12 @@
         "REPETITIONS": 3
     },
     {
-        "NAME": "Test p=5",
+        "NAME": "Variable #Parties: p=5",
         "N_STATES": 8,
         "N_SYMBOLS": 8,
         "PLAYER_INPUT_SIZES": [
-            8,
-            6,
+            7,
+            7,
             6,
             6,
             6
@@ -46,12 +46,12 @@
         "REPETITIONS": 3
     },
     {
-        "NAME": "Test p=6",
+        "NAME": "Variable #Parties: p=6",
         "N_STATES": 8,
         "N_SYMBOLS": 8,
         "PLAYER_INPUT_SIZES": [
-            7,
-            5,
+            6,
+            6,
             5,
             5,
             5,
@@ -60,7 +60,22 @@
         "REPETITIONS": 3
     },
     {
-        "NAME": "Test p=8",
+        "NAME": "Variable #Parties: p=7",
+        "N_STATES": 8,
+        "N_SYMBOLS": 8,
+        "PLAYER_INPUT_SIZES": [
+            5,
+            5,
+            5,
+            5,
+            4,
+            4,
+            4
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Variable #Parties: p=8",
         "N_STATES": 8,
         "N_SYMBOLS": 8,
         "PLAYER_INPUT_SIZES": [
@@ -76,26 +91,19 @@
         "REPETITIONS": 3
     },
     {
-        "NAME": "Test p=16",
+        "NAME": "Variable #Parties: p=9",
         "N_STATES": 8,
         "N_SYMBOLS": 8,
         "PLAYER_INPUT_SIZES": [
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
+            4,
+            4,
+            4,
+            4,
+            4,
+            3,
+            3,
+            3,
+            3
         ],
         "REPETITIONS": 3
     }

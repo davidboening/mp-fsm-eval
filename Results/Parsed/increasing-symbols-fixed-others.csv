@@ -1,25 +1,25 @@
 ,TestName,Repetition,# Players,# States,# Symbols,String Length,Virtual Machine,Time(s),Player-0 Data Sent(MB),Global Data Sent(MB),Result,Sum of Inputs
-0,Test z=8,0,3,64,8,15,./semi2k-party.x,2.03161,82.8513,247.971,True,64
-1,Test z=8,1,3,64,8,15,./semi2k-party.x,1.91402,82.8513,247.971,True,64
-2,Test z=8,2,3,64,8,15,./semi2k-party.x,1.8887,82.8513,247.971,True,64
-3,Test z=12,0,3,64,12,15,./semi2k-party.x,2.66269,115.921,346.911,True,90
-4,Test z=12,1,3,64,12,15,./semi2k-party.x,2.65008,115.921,346.911,True,90
-5,Test z=12,2,3,64,12,15,./semi2k-party.x,2.69617,115.921,346.911,True,90
-6,Test n=16,0,3,64,16,15,./semi2k-party.x,3.5842,148.983,445.835,True,128
-7,Test n=16,1,3,64,16,15,./semi2k-party.x,3.50228,148.983,445.835,True,128
-8,Test n=16,2,3,64,16,15,./semi2k-party.x,3.49262,148.983,445.835,True,128
-9,Test n=20,0,3,64,20,15,./semi2k-party.x,4.24497,182.064,544.798,False,145
-10,Test n=20,1,3,64,20,15,./semi2k-party.x,4.35462,182.064,544.798,False,145
-11,Test n=20,2,3,64,20,15,./semi2k-party.x,4.39734,182.064,544.798,False,145
-12,Test n=24,0,3,64,24,15,./semi2k-party.x,5.08977,215.13,643.73,True,164
-13,Test n=24,1,3,64,24,15,./semi2k-party.x,5.61242,215.13,643.73,True,164
-14,Test n=24,2,3,64,24,15,./semi2k-party.x,5.34508,215.13,643.73,True,164
-15,Test n=32,0,3,64,32,15,./semi2k-party.x,7.56574,289.461,866.195,True,268
-16,Test n=32,1,3,64,32,15,./semi2k-party.x,6.95168,289.461,866.195,True,268
-17,Test n=32,2,3,64,32,15,./semi2k-party.x,7.24177,289.461,866.195,True,268
-18,Test n=48,0,3,64,48,15,./semi2k-party.x,10.1133,429.97,1286.62,True,390
-19,Test n=48,1,3,64,48,15,./semi2k-party.x,10.3308,429.97,1286.62,True,390
-20,Test n=48,2,3,64,48,15,./semi2k-party.x,10.2373,429.97,1286.62,True,390
-21,Test n=64,0,3,64,64,15,./semi2k-party.x,13.7421,570.449,1706.98,False,483
-22,Test n=64,1,3,64,64,15,./semi2k-party.x,14.1166,570.449,1706.98,False,483
-23,Test n=64,2,3,64,64,15,./semi2k-party.x,13.7037,570.449,1706.98,False,483
+0,Variable,0,3,64,8,15,./semi2k-party.x,1.81827,82.8513,247.971,False,55
+1,Variable,1,3,64,8,15,./semi2k-party.x,1.79285,82.8513,247.971,False,55
+2,Variable,2,3,64,8,15,./semi2k-party.x,1.92658,82.8513,247.971,False,55
+3,Variable,0,3,64,16,15,./semi2k-party.x,3.1963,148.983,445.835,False,103
+4,Variable,1,3,64,16,15,./semi2k-party.x,3.21327,148.983,445.835,False,103
+5,Variable,2,3,64,16,15,./semi2k-party.x,3.25835,148.983,445.835,False,103
+6,Variable,0,3,64,24,15,./semi2k-party.x,4.65338,215.13,643.73,False,149
+7,Variable,1,3,64,24,15,./semi2k-party.x,4.86939,215.13,643.73,False,149
+8,Variable,2,3,64,24,15,./semi2k-party.x,4.81843,215.13,643.73,False,149
+9,Variable,0,3,64,32,15,./semi2k-party.x,6.1701,289.461,866.195,True,194
+10,Variable,1,3,64,32,15,./semi2k-party.x,6.29454,289.461,866.195,True,194
+11,Variable,2,3,64,32,15,./semi2k-party.x,6.20488,289.461,866.195,True,194
+12,Variable,0,3,64,40,15,./semi2k-party.x,8.09772,363.831,1088.74,False,263
+13,Variable,1,3,64,40,15,./semi2k-party.x,7.90615,363.831,1088.74,False,263
+14,Variable,2,3,64,40,15,./semi2k-party.x,7.88909,363.831,1088.74,False,263
+15,Variable,0,3,64,48,15,./semi2k-party.x,9.40753,429.97,1286.62,False,433
+16,Variable,1,3,64,48,15,./semi2k-party.x,9.5791,429.97,1286.62,False,433
+17,Variable,2,3,64,48,15,./semi2k-party.x,9.49263,429.97,1286.62,False,433
+18,Variable,0,3,64,56,15,./semi2k-party.x,11.1611,496.11,1484.5,False,349
+19,Variable,1,3,64,56,15,./semi2k-party.x,11.195,496.11,1484.5,False,349
+20,Variable,2,3,64,56,15,./semi2k-party.x,11.1139,496.11,1484.5,False,349
+21,Variable,0,3,64,64,15,./semi2k-party.x,12.5988,570.449,1706.98,False,403
+22,Variable,1,3,64,64,15,./semi2k-party.x,12.6714,570.449,1706.98,False,403
+23,Variable,2,3,64,64,15,./semi2k-party.x,12.4557,570.449,1706.98,False,403

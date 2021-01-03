@@ -8,6 +8,7 @@ echo N_STATES=16
 echo N_SYMBOLS=16
 echo N_PLAYERS=4
 echo STRING_LENGTH=15
+echo DEBUG MODE
 echo VIRTUAL_MACHINE=./semi2k-party.x
 echo REPETITIONS=3
 docker exec mp-fsm-eval-0 ./compile.py -M fsm_eval_debug 16 16 4 6 3 2 >/dev/null

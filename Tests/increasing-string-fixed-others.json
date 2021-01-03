@@ -1,17 +1,28 @@
 [
     {
-        "NAME": "Test s=5*3",
+        "NAME": "Variable String Lenght: m=10",
         "N_STATES": 8,
         "N_SYMBOLS": 8,
         "PLAYER_INPUT_SIZES": [
-            5,
-            5,
-            5
+            4,
+            3,
+            3
         ],
         "REPETITIONS": 3
     },
     {
-        "NAME": "Test s=10*3",
+        "NAME": "Variable String Lenght: m=20",
+        "N_STATES": 8,
+        "N_SYMBOLS": 8,
+        "PLAYER_INPUT_SIZES": [
+            7,
+            7,
+            6
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Variable String Lenght: m=30",
         "N_STATES": 8,
         "N_SYMBOLS": 8,
         "PLAYER_INPUT_SIZES": [
@@ -22,18 +33,29 @@
         "REPETITIONS": 3
     },
     {
-        "NAME": "Test n=15*3",
+        "NAME": "Variable String Lenght: m=40",
         "N_STATES": 8,
         "N_SYMBOLS": 8,
         "PLAYER_INPUT_SIZES": [
-            15,
-            15,
-            15
+            14,
+            13,
+            13
         ],
         "REPETITIONS": 3
     },
     {
-        "NAME": "Test n=20*3",
+        "NAME": "Variable String Lenght: m=50",
+        "N_STATES": 8,
+        "N_SYMBOLS": 8,
+        "PLAYER_INPUT_SIZES": [
+            17,
+            17,
+            16
+        ],
+        "REPETITIONS": 3
+    },
+    {
+        "NAME": "Variable String Lenght: m=60",
         "N_STATES": 8,
         "N_SYMBOLS": 8,
         "PLAYER_INPUT_SIZES": [
@@ -44,35 +66,24 @@
         "REPETITIONS": 3
     },
     {
-        "NAME": "Test n=30*3",
+        "NAME": "Variable String Lenght: m=70",
         "N_STATES": 8,
         "N_SYMBOLS": 8,
         "PLAYER_INPUT_SIZES": [
-            30,
-            30,
-            30
+            24,
+            23,
+            23
         ],
         "REPETITIONS": 3
     },
     {
-        "NAME": "Test n=40*3",
+        "NAME": "Variable String Lenght: m=80",
         "N_STATES": 8,
         "N_SYMBOLS": 8,
         "PLAYER_INPUT_SIZES": [
-            40,
-            40,
-            40
-        ],
-        "REPETITIONS": 3
-    },
-    {
-        "NAME": "Test n=50*3",
-        "N_STATES": 8,
-        "N_SYMBOLS": 8,
-        "PLAYER_INPUT_SIZES": [
-            50,
-            50,
-            50
+            27,
+            27,
+            26
         ],
         "REPETITIONS": 3
     }
