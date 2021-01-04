@@ -74,3 +74,8 @@ This file (if none of the tests defined in .json run the DEBUG flag) can be pars
 `./parse_test_results.py Results/Raw/increasing-party-fixed-others.out Results/Parsed/increasing-party-fixed-others.csv`
 
 The .csv files of all supported Tests with appropriate plots can be seen in [Plots](./AggregateData.ipynb)
+
+#### Run all Tests
+Added [RunAllTests](./RunAllTests.ipynb) to process all .json files in [Tests](./Tests).
+
+This notebooks only work on windows and requires a fairly specific setup described within the notebook itself.
