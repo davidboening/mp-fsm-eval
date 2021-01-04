@@ -1,7 +1,7 @@
 ,TestName,Repetition,# Players,# States,# Symbols,String Length,Virtual Machine,Time(s),Player-0 Data Sent(MB),Global Data Sent(MB),Result,Sum of Inputs
-0,Test semi2k,0,3,8,8,15,./semi2k-party.x,0.30832,16.6005,49.7077,True,44
-1,Test semi2k,1,3,8,8,15,./semi2k-party.x,0.315841,16.6005,49.7077,True,44
-2,Test semi2k,2,3,8,8,15,./semi2k-party.x,0.31115,16.6005,49.7077,True,44
-3,Test spdz2k,0,3,8,8,15,./spdz2k-party.x,1.35543,131.71,394.972,True,54
-4,Test spdz2k,1,3,8,8,15,./spdz2k-party.x,1.32822,131.71,394.972,True,54
-5,Test spdz2k,2,3,8,8,15,./spdz2k-party.x,1.29692,131.71,394.972,True,54
+0,Test semi2k,0,3,8,8,15,./semi2k-party.x,0.324412,16.6005,49.7077,True,56
+1,Test semi2k,1,3,8,8,15,./semi2k-party.x,0.325901,16.6005,49.7077,True,56
+2,Test semi2k,2,3,8,8,15,./semi2k-party.x,0.343998,16.6005,49.7077,True,56
+3,Test spdz2k,0,3,8,8,15,./spdz2k-party.x,1.93794,131.71,394.972,True,56
+4,Test spdz2k,1,3,8,8,15,./spdz2k-party.x,1.36321,131.71,394.972,True,56
+5,Test spdz2k,2,3,8,8,15,./spdz2k-party.x,1.36753,131.71,394.972,True,56

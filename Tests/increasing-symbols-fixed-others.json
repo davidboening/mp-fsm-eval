@@ -1,7 +1,7 @@
 [
     {
         "NAME": "Variable #Symbols: z=8",
-        "N_STATES": 64,
+        "N_STATES": 8,
         "N_SYMBOLS": 8,
         "PLAYER_INPUT_SIZES": [
             5,
@@ -12,7 +12,7 @@
     },
     {
         "NAME": "Variable #Symbols: z=16",
-        "N_STATES": 64,
+        "N_STATES": 8,
         "N_SYMBOLS": 16,
         "PLAYER_INPUT_SIZES": [
             5,
@@ -23,7 +23,7 @@
     },
     {
         "NAME": "Variable #Symbols: z=24",
-        "N_STATES": 64,
+        "N_STATES": 8,
         "N_SYMBOLS": 24,
         "PLAYER_INPUT_SIZES": [
             5,
@@ -34,7 +34,7 @@
     },
     {
         "NAME": "Variable #Symbols: z=32",
-        "N_STATES": 64,
+        "N_STATES": 8,
         "N_SYMBOLS": 32,
         "PLAYER_INPUT_SIZES": [
             5,
@@ -45,7 +45,7 @@
     },
     {
         "NAME": "Variable #Symbols: z=40",
-        "N_STATES": 64,
+        "N_STATES": 8,
         "N_SYMBOLS": 40,
         "PLAYER_INPUT_SIZES": [
             5,
@@ -56,7 +56,7 @@
     },
     {
         "NAME": "Variable #Symbols: z=48",
-        "N_STATES": 64,
+        "N_STATES": 8,
         "N_SYMBOLS": 48,
         "PLAYER_INPUT_SIZES": [
             5,
@@ -67,7 +67,7 @@
     },
     {
         "NAME": "Variable #Symbols: z=56",
-        "N_STATES": 64,
+        "N_STATES": 8,
         "N_SYMBOLS": 56,
         "PLAYER_INPUT_SIZES": [
             5,
@@ -78,7 +78,7 @@
     },
     {
         "NAME": "Variable #Symbols: z=64",
-        "N_STATES": 64,
+        "N_STATES": 8,
         "N_SYMBOLS": 64,
         "PLAYER_INPUT_SIZES": [
             5,

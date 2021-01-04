@@ -15,9 +15,6 @@ import math
 
 # Parameter Constraints
 N_STATES, N_SYMBOLS, N_INPUT = 16, 16, 10
-assert 0 < N_STATES < 33
-assert 0 < N_SYMBOLS < N_STATES + 1
-assert -1 < N_INPUT
 
 SYMBOL_BITS = math.ceil(math.log(N_SYMBOLS, 2))
 
@@ -39,7 +36,7 @@ print_ln(
 
 @for_range(N_INPUT)
 def _(j):
-    string1[j] = 1 % N_SYMBOLS
+    string1[j] = sgf2n(1)
 
 
 string2[0] = sgf2n(0)
@@ -92,11 +89,7 @@ def construct_final_state_set():
 F = construct_final_state_set()
 
 
-# Alphabet encoding and decoding (support for not binary alphabets)
-def indexing_fun(symbol):
-    return symbol
-
-
+# Support for non-binary Alphabets
 def decoding_fun(symbol):
     """
     Returns a sequence of N_SYMBOLS bits representing the symbol (000010 represent 4).

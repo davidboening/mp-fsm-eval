@@ -1,216 +1,216 @@
-Starting Variable
-N_STATES=64
+Starting Variable #Symbols: z=8
+N_STATES=8
 N_SYMBOLS=8
 N_PLAYERS=3
 STRING_LENGTH=15
 VIRTUAL_MACHINE=./semi2k-party.x
 REPETITIONS=3
-SUM_OF_DATA=55
+SUM_OF_DATA=62
 Repetition 1
 Trying to run 64-bit computation
-String has been refused
-Time = 1.81827 seconds 
-Data sent = 82.8513 MB
-Global data sent = 247.971 MB
+String has been accepted
+Time = 0.339503 seconds 
+Data sent = 16.6005 MB
+Global data sent = 49.7077 MB
 Repetition 2
 Trying to run 64-bit computation
-String has been refused
-Time = 1.79285 seconds 
-Data sent = 82.8513 MB
-Global data sent = 247.971 MB
+String has been accepted
+Time = 0.346148 seconds 
+Data sent = 16.6005 MB
+Global data sent = 49.7077 MB
 Repetition 3
 Trying to run 64-bit computation
-String has been refused
-Time = 1.92658 seconds 
-Data sent = 82.8513 MB
-Global data sent = 247.971 MB
-Finished Variable
-Starting Variable
-N_STATES=64
+String has been accepted
+Time = 0.340876 seconds 
+Data sent = 16.6005 MB
+Global data sent = 49.7077 MB
+Finished Variable #Symbols: z=8
+Starting Variable #Symbols: z=16
+N_STATES=8
 N_SYMBOLS=16
 N_PLAYERS=3
 STRING_LENGTH=15
 VIRTUAL_MACHINE=./semi2k-party.x
 REPETITIONS=3
-SUM_OF_DATA=103
+SUM_OF_DATA=108
 Repetition 1
 Trying to run 64-bit computation
-String has been refused
-Time = 3.1963 seconds 
-Data sent = 148.983 MB
-Global data sent = 445.835 MB
+String has been accepted
+Time = 0.65344 seconds 
+Data sent = 33.1008 MB
+Global data sent = 99.1085 MB
 Repetition 2
 Trying to run 64-bit computation
-String has been refused
-Time = 3.21327 seconds 
-Data sent = 148.983 MB
-Global data sent = 445.835 MB
+String has been accepted
+Time = 0.650844 seconds 
+Data sent = 33.1008 MB
+Global data sent = 99.1085 MB
 Repetition 3
 Trying to run 64-bit computation
-String has been refused
-Time = 3.25835 seconds 
-Data sent = 148.983 MB
-Global data sent = 445.835 MB
-Finished Variable
-Starting Variable
-N_STATES=64
+String has been accepted
+Time = 0.607482 seconds 
+Data sent = 33.1008 MB
+Global data sent = 99.1085 MB
+Finished Variable #Symbols: z=16
+Starting Variable #Symbols: z=24
+N_STATES=8
 N_SYMBOLS=24
 N_PLAYERS=3
 STRING_LENGTH=15
 VIRTUAL_MACHINE=./semi2k-party.x
 REPETITIONS=3
-SUM_OF_DATA=149
+SUM_OF_DATA=169
 Repetition 1
 Trying to run 64-bit computation
 String has been refused
-Time = 4.65338 seconds 
-Data sent = 215.13 MB
-Global data sent = 643.73 MB
+Time = 0.926299 seconds 
+Data sent = 41.4161 MB
+Global data sent = 123.939 MB
 Repetition 2
 Trying to run 64-bit computation
 String has been refused
-Time = 4.86939 seconds 
-Data sent = 215.13 MB
-Global data sent = 643.73 MB
+Time = 0.929872 seconds 
+Data sent = 41.4161 MB
+Global data sent = 123.939 MB
 Repetition 3
 Trying to run 64-bit computation
 String has been refused
-Time = 4.81843 seconds 
-Data sent = 215.13 MB
-Global data sent = 643.73 MB
-Finished Variable
-Starting Variable
-N_STATES=64
+Time = 0.914243 seconds 
+Data sent = 41.4161 MB
+Global data sent = 123.939 MB
+Finished Variable #Symbols: z=24
+Starting Variable #Symbols: z=32
+N_STATES=8
 N_SYMBOLS=32
 N_PLAYERS=3
 STRING_LENGTH=15
 VIRTUAL_MACHINE=./semi2k-party.x
 REPETITIONS=3
-SUM_OF_DATA=194
+SUM_OF_DATA=249
 Repetition 1
 Trying to run 64-bit computation
-String has been accepted
-Time = 6.1701 seconds 
-Data sent = 289.461 MB
-Global data sent = 866.195 MB
+String has been refused
+Time = 1.2325 seconds 
+Data sent = 57.9164 MB
+Global data sent = 173.34 MB
 Repetition 2
 Trying to run 64-bit computation
-String has been accepted
-Time = 6.29454 seconds 
-Data sent = 289.461 MB
-Global data sent = 866.195 MB
+String has been refused
+Time = 1.23079 seconds 
+Data sent = 57.9164 MB
+Global data sent = 173.34 MB
 Repetition 3
 Trying to run 64-bit computation
-String has been accepted
-Time = 6.20488 seconds 
-Data sent = 289.461 MB
-Global data sent = 866.195 MB
-Finished Variable
-Starting Variable
-N_STATES=64
+String has been refused
+Time = 1.25561 seconds 
+Data sent = 57.9164 MB
+Global data sent = 173.34 MB
+Finished Variable #Symbols: z=32
+Starting Variable #Symbols: z=40
+N_STATES=8
 N_SYMBOLS=40
 N_PLAYERS=3
 STRING_LENGTH=15
 VIRTUAL_MACHINE=./semi2k-party.x
 REPETITIONS=3
-SUM_OF_DATA=263
+SUM_OF_DATA=341
 Repetition 1
 Trying to run 64-bit computation
 String has been refused
-Time = 8.09772 seconds 
-Data sent = 363.831 MB
-Global data sent = 1088.74 MB
+Time = 1.60971 seconds 
+Data sent = 74.455 MB
+Global data sent = 222.818 MB
 Repetition 2
 Trying to run 64-bit computation
 String has been refused
-Time = 7.90615 seconds 
-Data sent = 363.831 MB
-Global data sent = 1088.74 MB
+Time = 1.64003 seconds 
+Data sent = 74.455 MB
+Global data sent = 222.818 MB
 Repetition 3
 Trying to run 64-bit computation
 String has been refused
-Time = 7.88909 seconds 
-Data sent = 363.831 MB
-Global data sent = 1088.74 MB
-Finished Variable
-Starting Variable
-N_STATES=64
+Time = 1.61939 seconds 
+Data sent = 74.455 MB
+Global data sent = 222.818 MB
+Finished Variable #Symbols: z=40
+Starting Variable #Symbols: z=48
+N_STATES=8
 N_SYMBOLS=48
 N_PLAYERS=3
 STRING_LENGTH=15
 VIRTUAL_MACHINE=./semi2k-party.x
 REPETITIONS=3
-SUM_OF_DATA=433
+SUM_OF_DATA=385
 Repetition 1
 Trying to run 64-bit computation
 String has been refused
-Time = 9.40753 seconds 
-Data sent = 429.97 MB
-Global data sent = 1286.62 MB
+Time = 1.96184 seconds 
+Data sent = 90.9629 MB
+Global data sent = 272.234 MB
 Repetition 2
 Trying to run 64-bit computation
 String has been refused
-Time = 9.5791 seconds 
-Data sent = 429.97 MB
-Global data sent = 1286.62 MB
+Time = 1.94514 seconds 
+Data sent = 90.9629 MB
+Global data sent = 272.234 MB
 Repetition 3
 Trying to run 64-bit computation
 String has been refused
-Time = 9.49263 seconds 
-Data sent = 429.97 MB
-Global data sent = 1286.62 MB
-Finished Variable
-Starting Variable
-N_STATES=64
+Time = 1.94732 seconds 
+Data sent = 90.9629 MB
+Global data sent = 272.234 MB
+Finished Variable #Symbols: z=48
+Starting Variable #Symbols: z=56
+N_STATES=8
 N_SYMBOLS=56
 N_PLAYERS=3
 STRING_LENGTH=15
 VIRTUAL_MACHINE=./semi2k-party.x
 REPETITIONS=3
-SUM_OF_DATA=349
+SUM_OF_DATA=369
 Repetition 1
 Trying to run 64-bit computation
 String has been refused
-Time = 11.1611 seconds 
-Data sent = 496.11 MB
-Global data sent = 1484.5 MB
+Time = 2.20407 seconds 
+Data sent = 99.2706 MB
+Global data sent = 297.05 MB
 Repetition 2
 Trying to run 64-bit computation
 String has been refused
-Time = 11.195 seconds 
-Data sent = 496.11 MB
-Global data sent = 1484.5 MB
+Time = 2.14727 seconds 
+Data sent = 99.2706 MB
+Global data sent = 297.05 MB
 Repetition 3
 Trying to run 64-bit computation
 String has been refused
-Time = 11.1139 seconds 
-Data sent = 496.11 MB
-Global data sent = 1484.5 MB
-Finished Variable
-Starting Variable
-N_STATES=64
+Time = 2.26554 seconds 
+Data sent = 99.2706 MB
+Global data sent = 297.05 MB
+Finished Variable #Symbols: z=56
+Starting Variable #Symbols: z=64
+N_STATES=8
 N_SYMBOLS=64
 N_PLAYERS=3
 STRING_LENGTH=15
 VIRTUAL_MACHINE=./semi2k-party.x
 REPETITIONS=3
-SUM_OF_DATA=403
+SUM_OF_DATA=449
 Repetition 1
 Trying to run 64-bit computation
 String has been refused
-Time = 12.5988 seconds 
-Data sent = 570.449 MB
-Global data sent = 1706.98 MB
+Time = 2.54097 seconds 
+Data sent = 115.779 MB
+Global data sent = 346.466 MB
 Repetition 2
 Trying to run 64-bit computation
 String has been refused
-Time = 12.6714 seconds 
-Data sent = 570.449 MB
-Global data sent = 1706.98 MB
+Time = 2.50595 seconds 
+Data sent = 115.779 MB
+Global data sent = 346.466 MB
 Repetition 3
 Trying to run 64-bit computation
 String has been refused
-Time = 12.4557 seconds 
-Data sent = 570.449 MB
-Global data sent = 1706.98 MB
-Finished Variable
+Time = 2.53079 seconds 
+Data sent = 115.779 MB
+Global data sent = 346.466 MB
+Finished Variable #Symbols: z=64

@@ -8,7 +8,7 @@ INPUT_SIZE_0 INPUT_SIZE_1 [...]
 
 Params:
 N_STATES : integer (1<=x<=64)
-N_SYMBOLS : integer (1<=x<=64 && x<N_STATES)
+N_SYMBOLS : integer (1<=x<=64)
 INPUT_SIZE_N : integer (any non negative)
     - represents the size of player N
 """
@@ -23,7 +23,7 @@ from math import log, ceil
 # Parameter Constraints
 N_STATES, N_SYMBOLS = int(program.args[1]), int(program.args[2])
 assert 0 < N_STATES < 65
-assert 0 < N_SYMBOLS < N_STATES + 1
+assert 0 < N_SYMBOLS < 65
 
 SYMBOL_BITS = ceil(log(N_SYMBOLS, 2))
 
@@ -50,9 +50,10 @@ input_string = Array(N_INPUT, sgf2n)
 # not possible because of library limitations)
 offset = 0
 for i, party_input_size in enumerate(program.args[3:]):
-    for j in range(int(party_input_size)):
+    party_input_size = int(party_input_size)
+    for j in range(party_input_size):
         input_string[offset + j] = sgf2n.get_raw_input_from(i)
-    offset += int(party_input_size)
+    offset += party_input_size
 
 
 # Initialize FSM
@@ -94,11 +95,7 @@ def construct_final_state_set():
 F = construct_final_state_set()
 
 
-# Alphabet encoding and decoding (support for not binary alphabets)
-def indexing_fun(symbol):
-    return symbol
-
-
+# Support for non-binary Alphabets
 def decoding_fun(symbol):
     """
     Returns a sequence of N_SYMBOLS bits representing the

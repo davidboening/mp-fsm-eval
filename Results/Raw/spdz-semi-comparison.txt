@@ -5,23 +5,23 @@ N_PLAYERS=3
 STRING_LENGTH=15
 VIRTUAL_MACHINE=./semi2k-party.x
 REPETITIONS=3
-SUM_OF_DATA=44
+SUM_OF_DATA=56
 Repetition 1
 Trying to run 64-bit computation
 String has been accepted
-Time = 0.30832 seconds 
+Time = 0.324412 seconds 
 Data sent = 16.6005 MB
 Global data sent = 49.7077 MB
 Repetition 2
 Trying to run 64-bit computation
 String has been accepted
-Time = 0.315841 seconds 
+Time = 0.325901 seconds 
 Data sent = 16.6005 MB
 Global data sent = 49.7077 MB
 Repetition 3
 Trying to run 64-bit computation
 String has been accepted
-Time = 0.31115 seconds 
+Time = 0.343998 seconds 
 Data sent = 16.6005 MB
 Global data sent = 49.7077 MB
 Finished Test semi2k
@@ -32,20 +32,20 @@ N_PLAYERS=3
 STRING_LENGTH=15
 VIRTUAL_MACHINE=./spdz2k-party.x
 REPETITIONS=3
-SUM_OF_DATA=54
+SUM_OF_DATA=56
 Repetition 1
 String has been accepted
-Time = 1.35543 seconds 
+Time = 1.93794 seconds 
 Data sent = 131.71 MB
 Global data sent = 394.972 MB
 Repetition 2
 String has been accepted
-Time = 1.32822 seconds 
+Time = 1.36321 seconds 
 Data sent = 131.71 MB
 Global data sent = 394.972 MB
 Repetition 3
 String has been accepted
-Time = 1.29692 seconds 
+Time = 1.36753 seconds 
 Data sent = 131.71 MB
 Global data sent = 394.972 MB
 Finished Test spdz2k
