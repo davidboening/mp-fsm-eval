@@ -10,7 +10,7 @@ import sys
 def check_test_case_validity(test_case_dataset):
     """
     Controls if dictionary entries are conform to syntax.
-    
+
     test_case_dataset : list of dict
     """
     for i, test_case in enumerate(test_case_dataset):
@@ -70,10 +70,10 @@ def check_test_case_validity(test_case_dataset):
 def write_opening(test_case_dataset, fd):
     """
     Write Network creation and Container initialization instructions to file.
-    
+
     test_case_dataset: list of dict (conform to syntax)
     fd : file descriptor
-    
+
     uses GLOBALS: NETWORK_NAME, IMAGE_NAME_FORMAT, IMAGE_NAME, DEVNULL
     """
 
@@ -105,10 +105,10 @@ def write_opening(test_case_dataset, fd):
 def write_closing(test_case_dataset, fd):
     """
     Write Container deallocation instructions to file.
-    
+
     test_case_dataset: list of dict (conform to syntax)
     fd : file descriptor
-    
+
     uses GLOBAL: IMAGE_NAME_FORMAT, DEVNULL
     """
 
@@ -131,10 +131,10 @@ def write_closing(test_case_dataset, fd):
 def write_test_case(test_case, fd):
     """
     Writes Instructions necessary to execute the given test case.
-    
+
     test_case: dict (conform to syntax)
     fd : file descriptor
-    
+
     uses GLOBAL: IMAGE_NAME_FORMAT, DEVNULL
     """
 
@@ -241,7 +241,10 @@ if __name__ == "__main__":
     parser.add_argument("name", help="Name of generated Script")
 
     parser.add_argument(
-        "-I", "--image", default="mp-fsm-eval", help="Name of the image (default: mp-fsm-eval)"
+        "-I",
+        "--image",
+        default="mp-fsm-eval",
+        help="Name of the image (default: mp-fsm-eval)",
     )
     parser.add_argument(
         "-N",
@@ -250,12 +253,17 @@ if __name__ == "__main__":
         help="Name of the network (default: mp-fsm-eval-internal-lan)",
     )
     parser.add_argument(
-        "-C", "--container-prefix", default="mp-fsm-eval", help="Prefix for Container names"
-        " (default: mp-fsm-eval)"
+        "-C",
+        "--container-prefix",
+        default="mp-fsm-eval",
+        help="Prefix for Container names" " (default: mp-fsm-eval)",
     )
     parser.add_argument(
-        "-S", "--shell", default="powershell7", help="Specifies shell (default: powershell7)."
-        " Currently supported shells are: bash (.sh script), powershell7 (.ps1 script)"
+        "-S",
+        "--shell",
+        default="powershell7",
+        help="Specifies shell (default: powershell7)."
+        " Currently supported shells are: bash (.sh script), powershell7 (.ps1 script)",
     )
 
     args = parser.parse_args()
@@ -267,7 +275,7 @@ if __name__ == "__main__":
     NETWORK_NAME = args.network
 
     IMAGE_NAME_FORMAT = args.container_prefix + "-{}"
-	
+
     if args.shell == "powershell7":
         DEVNULL = "$null"
     elif args.shell == "bash":

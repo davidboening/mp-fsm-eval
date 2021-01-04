@@ -17,9 +17,9 @@ class ParsingError(Exception):
 def parse_result_file(fd):
     """
     Parses an output file optained from running a conform script.
-    
+
     fd: file descriptor (syntax conform file)
-    
+
     DOES NOT SUPPORT DEBUG FLAG
     """
 
